@@ -1,11 +1,7 @@
-REM 
-
-
 @echo off
-REM 
+
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 
-REM 
 if '%errorlevel%' NEQ '0' (
     echo Requesting administrative privileges...
     goto UACPrompt
@@ -22,7 +18,6 @@ if '%errorlevel%' NEQ '0' (
 
 :gotAdmin
     pushd "%CD%"
-    CD /D "%~dp0"
     cd /D "%~dp0"
     py --version 3>NUL
     if errorlevel 1 goto errorNoPython
