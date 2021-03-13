@@ -1,6 +1,6 @@
 # launchpad-control
 
-A app written in python to launch functions when a button is pressed or released.
+An app written in python to launch functions when a button is pressed or released.
 
 This uses the [launchpad-py](https://github.com/FMMT666/launchpad.py) library to control the launchpad.
 
